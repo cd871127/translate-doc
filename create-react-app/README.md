@@ -90,16 +90,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## 升级到新版本
 
-Create React App is divided into two packages:
+Create React App被划分为两个package:
 
-* `create-react-app` is a global command-line utility that you use to create new projects.
+* `create-react-app` 是全局的命令行实用工具,可以用来创建新的项目.
 * `react-scripts` is a development dependency in the generated projects (including this one).
 
 You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.
 
-When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
+运行`create-react-app`时, 总会用最新版本的 `react-scripts`创建项目,因此在新创建的项目中,必然会有新的特性和提升.
 
-To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.
+升级现有项目到新版的`react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), 找出当前的版本号 (如果不确定当前版本,那么检查目录中的`package.json`), 然后执行新版本的迁移说明.
 
 In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
 
@@ -111,7 +111,7 @@ We are always open to [your feedback](https://github.com/facebookincubator/creat
 
 ## 目录结构
 
-After creation, your project should look like this:
+创建项目之后, 你的项目看起来应该像这样:
 
 ```
 my-app/
@@ -130,15 +130,15 @@ my-app/
     logo.svg
 ```
 
-For the project to build, **these files must exist with exact filenames**:
+For the project to build, **这些文件必须存在,并且名字如下**:
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+* `public/index.html` 这是页面模板;
+* `src/index.js` 这是JS入口.
 
-You can delete or rename the other files.
+你可以删除或者重命名其他文件.
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
+你也许在`src`中创建了子目录. 为了快速的重建, 只有 `src`中的文件会被Webpack处理.<br>
+你需要 **把js和CSS文件放在`src`文件夹下面**, 否则Webpack看不到它们.
 
 Only files inside `public` can be used from `public/index.html`.<br>
 Read instructions below for using assets from JavaScript and HTML.
@@ -148,15 +148,15 @@ They will not be included in the production build so you can use them for things
 
 ## Available Scripts
 
-In the project directory, you can run:
+在项目目录, 你可以运行:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+以开发模式运行app.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+当你修改时,页面会自动更新.<br>
+同时你还会在控制台中看到所有的 lint errors.
 
 ### `npm test`
 
@@ -165,19 +165,19 @@ See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+构建生产项目到 `build` 文件夹中.<br>
+这会绑定react到生产模式并且执行最佳性能优化.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+这个构建会缩小文件大小,并且文件名包含hash.<br>
+你的app已经可以部署了!
 
 See the section about [deployment](#deployment) for more information.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**注意: 这是单向的操作. 一旦执行了 `eject`, 就不能恢复到之前了!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+如果你对构建工具和配置选项不满意, 任何时候都可以 `eject`. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
