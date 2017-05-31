@@ -185,7 +185,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Supported Language Features and Polyfills
 
-This project supports a superset of the latest JavaScript standard.<br>
+这个项目提供了最新的 JavaScript 标准的超集.<br>
 In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, it also supports:
 
 * [Exponentiation Operator](https://github.com/rwaldron/exponentiation-operator) (ES2016).
@@ -199,7 +199,7 @@ Learn more about [different proposal stages](https://babeljs.io/docs/plugins/#pr
 
 While we recommend to use experimental proposals with some caution, Facebook heavily uses these features in the product code, so we intend to provide [codemods](https://medium.com/@cpojer/effective-javascript-codemods-5a6686bb46fb) if any of these proposals change in the future.
 
-Note that **the project only includes a few ES6 [polyfills](https://en.wikipedia.org/wiki/Polyfill)**:
+Note that **这个项目仅包含少许的 ES6 [polyfills](https://en.wikipedia.org/wiki/Polyfill)**:
 
 * [`Object.assign()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) via [`object-assign`](https://github.com/sindresorhus/object-assign).
 * [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) via [`promise`](https://github.com/then/promise).
@@ -209,14 +209,14 @@ If you use any other ES6+ features that need **runtime support** (such as `Array
 
 ## Syntax Highlighting in the Editor
 
-To configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.
+关于在你喜欢的编辑中配置语法高亮, 参考 [relevant Babel documentation page](https://babeljs.io/docs/editors) 跟着说明. 其中包含了一些流行的编辑器.
 
 ## Displaying Lint Output in the Editor
 
->Note: this feature is available with `react-scripts@0.2.0` and higher.<br>
+>注意: 这个特性需要 `react-scripts@0.2.0` 或更高的版本.<br>
 >It also only works with npm 3 or higher.
 
-Some editors, including Sublime Text, Atom, and Visual Studio Code, provide plugins for ESLint.
+某些编辑器, including Sublime Text, Atom, and Visual Studio Code, 提供ESLint的插件.
 
 They are not required for linting. You should see the linter output right in your terminal as well as the browser console. However, if you prefer the lint results to appear right in your editor, there are some extra steps you can do.
 
@@ -236,7 +236,7 @@ If you want to enforce a coding style for your project, consider using [Prettier
 
 ## Debugging in the Editor
 
-**This feature is currently only supported by [Visual Studio Code](https://code.visualstudio.com) editor.**
+**目前只有[Visual Studio Code](https://code.visualstudio.com)支持这个特性.**
 
 Visual Studio Code supports debugging out of the box with Create React App. This enables you as a developer to write and debug your React code without leaving the editor, and most importantly it enables you to have a continuous development workflow, where context switching is minimal, as you don’t have to switch between tools.
 
@@ -265,11 +265,11 @@ Start your app by running `npm start`, and start debugging in VS Code by pressin
 
 ## Changing the Page `<title>`
 
-You can find the source HTML file in the `public` folder of the generated project. You may edit the `<title>` tag in it to change the title from “React App” to anything else.
+You can find the source HTML file in the `public` folder of the generated project. 你也许会编辑里面的 `<title>` 标签 把它从“React App”改为别的.
 
-Note that normally you wouldn’t edit files in the `public` folder very often. For example, [adding a stylesheet](#adding-a-stylesheet) is done without touching the HTML.
+注意,通常你不会经常修改 `public`文件夹中的文件. 例如, [adding a stylesheet](#adding-a-stylesheet) 可以在不修改html的情况下完成上述操作.
 
-If you need to dynamically update the page title based on the content, you can use the browser [`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) API. For more complex scenarios when you want to change the title from React components, you can use [React Helmet](https://github.com/nfl/react-helmet), a third party library.
+如果你需要根据内容动态的更新页面标题, 你可以使用浏览器的 [`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) API. For more complex scenarios when you want to change the title from React components, 你可以使用 [React Helmet](https://github.com/nfl/react-helmet)这个第三方库.
 
 If you use a custom server for your app in production and want to modify the title before it gets sent to the browser, you can follow advice in [this section](#generating-dynamic-meta-tags-on-the-server). Alternatively, you can pre-build each page as a static HTML file which then loads the JavaScript bundle, which is covered [here](#pre-rendering-into-static-html-files).
 
